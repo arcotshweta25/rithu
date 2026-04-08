@@ -1,0 +1,17 @@
+new
+name
+next
+more than 5k
+processor is 3
+next
+
+settings
+display
+monitor 95
+monitor count 2
+start
+
+terminal
+gedit sam.c
+gcc sam.c
+./a.out
