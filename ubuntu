@@ -15,3 +15,74 @@ terminal
 gedit sam.c
 gcc sam.c
 ./a.out
+
+
+
+#include <stdio.h>
+
+int main() {
+    float num1, num2, num3, avg;
+
+    printf("Enter first number: ");
+    scanf("%f", &num1);
+
+    printf("Enter second number: ");
+    scanf("%f", &num2);
+
+    printf("Enter third number: ");
+    scanf("%f", &num3);
+
+    avg = (num1 + num2 + num3) / 3;
+
+    printf("\n--- Results ---\n");
+    printf("Sum: %.2f\n", num1 + num2 + num3);
+    printf("Average: %.2f\n", avg);
+
+    return 0;
+}
+
+
+
+
+
+
+
+
+#include <stdio.h>
+
+int main() {
+    int n, i;
+    int t1 = 0, t2 = 1;
+    int nextTerm = t1 + t2;
+
+    printf("Enter the number of terms: ");
+    scanf("%d", &n);
+
+    // Print the first two terms
+    printf("Fibonacci Series: %d, %d, ", t1, t2);
+
+    // Loop starts from the 3rd term
+    for (i = 3; i <= n; ++i) {
+        printf("%d, ", nextTerm);
+        t1 = t2;
+        t2 = nextTerm;
+        nextTerm = t1 + t2;
+    }
+
+    return 0;
+}
+
+
+
+#include <stdio.h>
+
+int main() {
+    int a=5,b=10,temp;
+printf("the variables before swap are %d and %d", a, b);
+temp = a;
+a=b;
+b=temp;
+printf("the variables after swap are %d and %d", a, b);
+}
+
+
