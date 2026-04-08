@@ -1,0 +1,39 @@
+git --version
+git config --global user.name
+                    user.email
+                    core.editor "code --wait"
+code
+mkdir sam
+cd sam
+git init
+
+go to vs code 
+click file
+open sam folder
+in the folder open file and give sum.c or sum.py
+
+open github
+make new repo sam
+open vs code and type those git lines
+git clone "path"
+
+
+
+git push -u origin (to update)
+git pull origin main
+git fetch origin
+git merge origin/main   OR    git pull origin main
+
+git commin -m "initial commit"
+git log
+git checkout
+git status
+git branch child1
+git branch
+git checkout master
+git checkout child2
+
+git reset --soft HEAD~1
+
+git rm file.txt
+git commit -m "deleted file"
